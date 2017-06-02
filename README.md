@@ -1,0 +1,52 @@
+### Styled Components slides for ReactBKK 2.0.0
+
+- Cover - Title, name, job title, pic
+- Cover - gives credit to styled-components creators, recently released 2.0, react-native and SSR suported.
+- Background at Jitta - Jitta's front-end stack
+- React at Jitta - Why? we ended up with using styled-components, pic of first sight
+- React at Jitta - challenge, making our own base ui framework (as much as possible)
+- React at Jitta - Why? maturing browsers, small dependencies, less bloated code
+- (Framework, Styleguide) building - Base styles, Base components, researching examples...
+- (Framework, Styleguide) building - Base styles (SASS) your global base styles for every component to use. smallest breakdown, no dependencies, contexted, variables, mixin, themes, examples...
+- (Framework, Styleguide) building - using sass guildlines and using classnames to build stuff
+- (Framework, Styleguide) building - components and scoped css
+- (Framework, Styleguide) building - scoped css methodlogies, contexted BEM RSCSS 
+- (Framework, Styleguide) building - css modules, ended up with code like this. 
+- styled components intro - came across styled components, pic of first sight, first it looks nothing special
+- styled components intro - came across rebass code, actually base css could be as base components! super
+- styled components intro - came across styled components again, seeing we could code base styles from ... to ..., no more classnames!
+- styled components intro - we are not actually returning dom elements too, we are building another layer to control the actual dom!, no actual dom rendering could lead to cross platform code!
+- styled components intro - code is more cleaned, styles are more controled, app developers more convenince. React mindset components, making a set of you tags/language, controlled and encapsulate.
+- React at Jitta - Why? we ended up with using styled-components, outcome of new jitta beta, made out more than 90% of our own base components
+- styled components basics - tagged template literals, its like writing sass, every css is supported, don't forget the semi-colon, building a dom element with that style to render.
+- styled components basics - used it like ordinary react components, it passes native attributes, its generates th styles behind the scenes, attach the styles on time. autoprefixed
+- styled components basics - think as a string with interpolations, interpolations return another string, that's it
+- styled components basics - overriding other components styles, 2 classnames, sometimes orders are wrong.
+- styled components basics - extending a component styles, 1 classname, 2.0
+- styled components basics - back to good old css!, styling injected html
+- styled components advanced - theme provider, as HOC
+- working with styled components - everything in javascript works, from defining your style variables
+- working with styled components - export your variables, interpolate in your style components, boom!
+- working with styled components - better than that, the css, build your css sets before building up components, highly sharable code right here.
+- working with styled components - its a string, and thinks or order like normal css!, props are flown into css too!
+- working with styled components - its easier to combined styles vs. styles as js object
+- working with styled components - conditions and media queries, you may have to override every breakpoints.
+- working with styled components - mixins are just functions to return css strings!
+- working with styled components - inject global, don't use (multiple) times is better, ordering, web only!
+- working with styled components - constructing your context, use it as plain div wrapper
+- working with styled components - 2.0 Contextual Overrides
+- styled components performance - declare your components outside render
+- styled components performance - it should generate styles if only used first time
+- styled components performance - if generated props are artibutary, like using with positions, use inline is better
+- styled components performance - 2.0 attr api to use inline styles
+- testing styled components - jest enzyme node env, load jsdom after stylesheets
+- testing styled components - using SSR api to get styles
+- testing styled components - setting display name to able to select
+- testing styled components - get hash classnames and assert styles
+- testing styled components - select style components is not dom, use innerRef
+- testing styled components - new https://github.com/styled-components/jest-styled-components
+- styled components tools - syntax higlighting atom, vscode
+- styled components tools - linting https://github.com/styled-components/stylelint-processor-styled-components
+- styled components tools - debugging https://github.com/styled-components/babel-plugin-styled-components#better-debugging
+- styled components tools - polished https://github.com/styled-components/polished
+- ending - thanking and Q/A?

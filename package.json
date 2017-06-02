@@ -1,0 +1,33 @@
+{
+  "name": "styled-components-reactBKK-2",
+  "description": "Styled Components slides for ReactBKK 2.0.0",
+  "version": "1.0.0",
+  "author": "@yanawaro",
+  "homepage": "http://yanawaro.github.io/reactbkk2.0.0",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-addons-shallow-compare": "^15.5.2",
+    "react-dom": "^15.5.4",
+    "react-live": "^1.5.2",
+    "react-presents": "^0.7.7",
+    "styled-components": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.1.4",
+    "babel-plugin-styled-components-named": "^0.1.1",
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.6",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-processor-styled-components": "^0.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint:css": "stylelint './src/**/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
