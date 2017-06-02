@@ -1,0 +1,13 @@
+{
+  "short_name": "Styled Components ReactBKK 2.0.0",
+  "name": "Styled Components slides for ReactBKK 2.0.0",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
