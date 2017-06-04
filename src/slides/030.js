@@ -9,7 +9,7 @@ const components = `const variants = {
   default: css\` font-size: 32px;\`,
   big: css\` font-size: 50px;\`,
   medium: css\` font-size: 25px;\`,
-  small: css\` font-size: 12px;\`,
+  small: css\` font-size: 12px;\`
 }
 
 const underlineTextStyle = css\`

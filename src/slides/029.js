@@ -26,7 +26,7 @@ const specialTextStyle = css\`
 \`
 
 const Title = styled.h1\`
-  \${margin};
+  \${margin}
   \${textStyle}
   \${props => props.underline && underlineTextStyle}
   \${props => props.special && specialTextStyle}
