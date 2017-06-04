@@ -9,8 +9,9 @@ const components = `
 //import { injectGlobal } from 'styled-components'
 
 injectGlobal\`
-  // body { width: 50%; }
-  .giTYCY { display: none; }
+  html { font-style: sans-serif; }
+  body { background-color: #34ad66; }
+  a:hover { text-decoration: underline; }
 \`
 
 render()

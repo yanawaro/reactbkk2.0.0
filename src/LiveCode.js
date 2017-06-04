@@ -15,7 +15,7 @@ const CustomLiveProvider = styled(LiveProvider)`
 `
 
 const BlackFlex = styled(Flex)`
-  background-color: #1D1F21;
+  background-color: #1d1f21;
 `
 
 const Previewer = styled.div`
