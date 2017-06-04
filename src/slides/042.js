@@ -5,22 +5,28 @@ import {
 } from '../Theme' 
 import LiveCode from '../LiveCode'
 
-const components = `const Div = styled.div\`\`
-const Input = styled.input\`\`
-
-const InputInstance = <Input placeholder="Search" innerRef={dom => { this.domNode = dom; console.log(dom)}} />
-
-const Form = () => {
-  console.log(this)
-  return <Div id="test" innerRef={function(dom) { this.domNode = dom; console.log(this)}} />
-}
+const components = `const Input = styled.input\`\`
 
 render(
-  <Form />
+  class Form extends React.Component {
+    constructor(props) {
+      super(props)
+      this.inputDomNode = null
+    }
+    render() {
+      return (
+        <Input 
+          placeholder="Search" 
+          innerRef={dom => this.inputDomNode = dom}
+          onFocus={() => console.log(this.inputDomNode)}
+        />
+      )
+    }
+  }
 )
 
-// wrapper.find(Input.focus()) //doesn't work
-// wrapper.find(Input.focus()) //doesn't work
+//...
+//wrapper.find(Form.getNode().inputDomNode.focus())
 `
 
 export default () => (

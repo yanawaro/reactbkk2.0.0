@@ -4,11 +4,11 @@ import styled, { css, injectGlobal } from 'styled-components'
 
 injectGlobal`
   .giTYCY { display: none; }
-`
+` // eslint-disable-line no-unused-expressions
 
 const ThemedContext = styled(ContentSlide)`
   background: #263238;
-  overflow: hidden;
+  //overflow: hidden;
   ${props => props.featured && `
     display: flex;
     flex-direction: column;

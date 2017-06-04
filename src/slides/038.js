@@ -22,11 +22,15 @@ render(
     constructor(props) {
       super(props)
       this.state = { top: 0, left: 0 }
+      this.onMouseMove = (e) => {
+        this.setState({ top: e.clientY, left: e.clientX })
+      }
     }
     componentDidMount() {
-      window.addEventListener('mousemove', (e) => {
-        this.setState({ top: e.clientY, left: e.clientX })
-      })
+      window.addEventListener('mousemove', this.onMouseMove)
+    }
+    componentWillUnmount() {
+      window.removeEventListener('mousemove', this.onMouseMove)
     }
     render() {
       const { top, left } = this.state
